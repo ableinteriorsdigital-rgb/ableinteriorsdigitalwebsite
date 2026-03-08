@@ -8,6 +8,7 @@ export default function EnquiryPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
+  const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
@@ -37,7 +38,7 @@ export default function EnquiryPopup() {
           name: name.trim(),
           phone: mobile.trim(),
           service: "Interior Design",
-          message: "Quick enquiry from popup form",
+          message: message.trim() || "Quick enquiry from popup form",
         }),
       });
       setSubmitted(true);
@@ -122,6 +123,20 @@ export default function EnquiryPopup() {
                         pattern="[0-9]{10}"
                         title="Please enter a valid 10-digit mobile number"
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="popup-message" className="block text-sm font-semibold text-secondary mb-1.5">
+                        Message <span className="text-text-light font-normal">(optional)</span>
+                      </label>
+                      <textarea
+                        id="popup-message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        placeholder="Tell us about your requirements..."
+                        rows={3}
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm resize-none"
                       />
                     </div>
 

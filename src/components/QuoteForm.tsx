@@ -165,15 +165,13 @@ export default function QuoteForm({ compact = false }: QuoteFormProps) {
       </div>
 
       {/* Message */}
-      {!compact && (
-        <textarea
-          rows={4}
-          placeholder="Tell us about your requirements..."
-          value={formData.message}
-          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-4 py-3.5 bg-surface border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all resize-none"
-        />
-      )}
+      <textarea
+        rows={compact ? 3 : 4}
+        placeholder="Additional message (optional)"
+        value={formData.message}
+        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+        className="w-full px-4 py-3.5 bg-surface border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all resize-none"
+      />
 
       <button
         type="submit"
