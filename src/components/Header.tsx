@@ -13,6 +13,9 @@ const navLinks = [
   { href: "/windows", label: "Windows" },
   { href: "/doors", label: "Doors" },
   { href: "/interiors", label: "Interiors" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/blog", label: "Blog" },
+  { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact Us" },
 ];
 
@@ -73,19 +76,19 @@ export default function Header() {
             </Link>
 
             {/* Desktop nav */}
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav className="hidden xl:flex items-center gap-0">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-2 text-sm font-medium text-text hover:text-primary rounded-lg hover:bg-primary/5 transition-all duration-200"
+                  className="px-3 py-2 text-[13px] font-medium text-text hover:text-primary rounded-lg hover:bg-primary/5 transition-all duration-200 whitespace-nowrap"
                 >
                   {link.label}
                 </Link>
               ))}
               <Link
                 href="/get-quote"
-                className="ml-4 px-6 py-2.5 bg-gradient-to-r from-primary to-primary-light text-white text-sm font-semibold rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 hover:-translate-y-0.5"
+                className="ml-3 px-5 py-2.5 bg-gradient-to-r from-primary to-primary-light text-white text-[13px] font-semibold rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap"
               >
                 Get Free Quote
               </Link>
@@ -94,7 +97,7 @@ export default function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+              className="xl:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
@@ -109,7 +112,7 @@ export default function Header() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-white border-t border-slate-100 overflow-hidden"
+              className="xl:hidden bg-white border-t border-slate-100 overflow-hidden"
             >
               <div className="px-4 py-4 space-y-1">
                 {navLinks.map((link) => (

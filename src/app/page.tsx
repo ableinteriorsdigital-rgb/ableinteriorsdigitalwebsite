@@ -424,7 +424,7 @@ export default function HomePage() {
           </div>
           <div className="text-center mt-10">
             <Link
-              href="/about"
+              href="/gallery"
               className="inline-flex items-center gap-2 px-8 py-3 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary hover:text-white transition-all group"
             >
               View All Projects
