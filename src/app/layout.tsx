@@ -41,6 +41,11 @@ export const metadata: Metadata = {
     "interior solutions",
   ],
   authors: [{ name: "Able Interiors & Windows" }],
+  icons: {
+    icon: "/logo/logo.png",
+    shortcut: "/logo/logo.png",
+    apple: "/logo/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -48,12 +53,21 @@ export const metadata: Metadata = {
     title: "Able Interiors & Windows | Premium Windows, Doors & Interiors",
     description:
       "Transform your home with premium uPVC & aluminium windows, doors, and complete interior solutions. 20-year warranty. Free consultation.",
+    images: [
+      {
+        url: "/logo/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Able Interiors & Windows",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Able Interiors & Windows | Premium Windows, Doors & Interiors",
     description:
       "Transform your home with premium uPVC & aluminium windows, doors, and complete interior solutions.",
+    images: ["/logo/logo.png"],
   },
   robots: {
     index: true,

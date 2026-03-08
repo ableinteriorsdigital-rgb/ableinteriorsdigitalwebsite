@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTimes, FaPaperPlane } from "react-icons/fa";
-import { HiChat } from "react-icons/hi";
+import Image from "next/image";
 
 interface Message {
   id: number;
@@ -110,10 +110,10 @@ export default function ChatBot() {
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
             onClick={() => setIsOpen(true)}
-            className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-primary rounded-full shadow-lg shadow-primary/30 flex items-center justify-center text-white hover:bg-primary-dark transition-colors group"
+            className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-white rounded-full shadow-lg shadow-primary/30 flex items-center justify-center hover:shadow-xl transition-all group overflow-hidden"
             aria-label="Open chat"
           >
-            <HiChat className="text-2xl group-hover:scale-110 transition-transform" />
+            <Image src="/logo/logo.png" alt="Chat with us" width={40} height={40} className="w-10 h-10 object-contain group-hover:scale-110 transition-transform" />
             {/* Notification dot */}
             <span className="absolute -top-1 -right-1 w-4 h-4 bg-accent rounded-full border-2 border-white" />
           </motion.button>
@@ -134,8 +134,8 @@ export default function ChatBot() {
             {/* Header */}
             <div className="bg-gradient-to-r from-primary to-primary-light px-5 py-4 flex items-center justify-between shrink-0">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                  <HiChat className="text-white text-lg" />
+                <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center overflow-hidden">
+                  <Image src="/logo/logo.png" alt="Able Interiors & Windows" width={32} height={32} className="w-8 h-8 object-contain" />
                 </div>
                 <div>
                   <h3 className="text-white font-bold text-sm">Able Interiors & Windows</h3>
