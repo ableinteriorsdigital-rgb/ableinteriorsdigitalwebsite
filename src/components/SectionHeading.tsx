@@ -26,7 +26,7 @@ export default function SectionHeading({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className={`mb-12 md:mb-16 ${centered ? "text-center" : ""}`}
+      className={`mb-8 md:mb-12 ${centered ? "text-center" : ""}`}
     >
       {subtitle && (
         <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-semibold rounded-full mb-4">

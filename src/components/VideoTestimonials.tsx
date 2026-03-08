@@ -56,7 +56,7 @@ export default function VideoTestimonials() {
       <section className="section-padding bg-surface">
         <div className="max-w-7xl mx-auto px-4">
           {/* Section Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <motion.span
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ export default function VideoTestimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-3xl md:text-4xl font-bold text-secondary mb-4"
+              className="text-2xl md:text-4xl font-bold text-secondary mb-3 md:mb-4"
             >
               Watch Our{" "}
               <span className="text-primary">Happy Clients</span>
@@ -108,7 +108,7 @@ export default function VideoTestimonials() {
               </>
             )}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
               {visibleVideos.map((video, i) => (
                 <motion.div
                   key={video.id}
@@ -119,7 +119,7 @@ export default function VideoTestimonials() {
                   className="group cursor-pointer"
                   onClick={() => openVideo(video.id)}
                 >
-                  <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-slate-200 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300">
+                  <div className="relative aspect-[3/4] sm:aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden border-2 border-slate-200 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300">
                     {/* Video thumbnail / preview */}
                     <video
                       src={video.src}
@@ -133,8 +133,8 @@ export default function VideoTestimonials() {
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                     {/* Play button */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <FaPlay className="text-primary text-lg ml-1" />
+                      <div className="w-10 h-10 md:w-14 md:h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <FaPlay className="text-primary text-sm md:text-lg ml-0.5 md:ml-1" />
                       </div>
                     </div>
                   </div>
@@ -145,7 +145,7 @@ export default function VideoTestimonials() {
 
           {/* Pagination dots */}
           {totalPages > 1 && (
-            <div className="flex justify-center gap-2 mt-8">
+            <div className="flex justify-center gap-2 mt-6">
               {Array.from({ length: totalPages }).map((_, i) => (
                 <button
                   key={i}
@@ -160,7 +160,7 @@ export default function VideoTestimonials() {
           )}
 
           {/* Visit More button */}
-          <div className="text-center mt-10">
+          <div className="text-center mt-6 md:mt-10">
             <Link
               href="/about"
               className="inline-flex items-center justify-center px-10 py-3.5 bg-secondary text-white font-semibold rounded-full hover:bg-secondary/90 transition-all hover:shadow-lg"
