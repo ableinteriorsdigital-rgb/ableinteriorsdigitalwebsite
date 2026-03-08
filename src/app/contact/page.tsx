@@ -23,35 +23,35 @@ const contactInfo = [
   {
     icon: FaPhone,
     title: "Phone",
-    details: ["+91 98765 43210"],
-    link: "tel:+919876543210",
+    details: ["+91 97890 53195", "+91 97899 14746"],
+    link: "tel:+919789053195",
     color: "bg-blue-50 text-blue-600",
   },
   {
     icon: FaWhatsapp,
     title: "WhatsApp",
-    details: ["+91 98765 43210"],
-    link: "https://wa.me/919876543210",
+    details: ["+91 97890 53195"],
+    link: "https://wa.me/919789053195",
     color: "bg-green-50 text-green-600",
   },
   {
     icon: FaEnvelope,
     title: "Email",
-    details: ["info@ablewindows.com", "sales@ablewindows.com"],
-    link: "mailto:info@ablewindows.com",
+    details: ["ablewindows22@gmail.com", "ableinteriorsdigital@gmail.com"],
+    link: "mailto:ablewindows22@gmail.com",
     color: "bg-amber-50 text-amber-600",
   },
   {
     icon: FaMapMarkerAlt,
     title: "Office Address",
-    details: ["123, Anna Salai", "Chennai, Tamil Nadu 600002"],
+    details: ["Flat No.: 1/106ab, G1, Plot No.B5", "Sampath Nagar, Nanmangalam", "Chennai - 600129"],
     link: "#map",
     color: "bg-red-50 text-red-600",
   },
   {
     icon: FaClock,
     title: "Working Hours",
-    details: ["Mon – Sat: 9:00 AM – 7:00 PM", "Sun: 10:00 AM – 4:00 PM"],
+    details: ["All Days: 9:30 AM – 6:30 PM"],
     link: null,
     color: "bg-purple-50 text-purple-600",
   },
@@ -79,7 +79,7 @@ export default function ContactPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Contact{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                Able Windows
+                Able Interiors & Windows
               </span>
             </h1>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
@@ -158,10 +158,10 @@ export default function ContactPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center pb-8">
                     <div className="text-center">
                       <h3 className="text-lg font-bold text-white mb-2">
-                        Able Windows Showroom
+                        Able Interiors & Windows Showroom
                       </h3>
                       <p className="text-white/80 text-sm mb-4">
-                        123, Anna Salai, Chennai, Tamil Nadu 600002
+                        Flat No.: 1/106ab, G1, Plot No.B5, Sampath Nagar, Nanmangalam, Chennai - 600129
                       </p>
                       <a
                         href="https://maps.google.com/?q=Chennai+Tamil+Nadu"
@@ -181,8 +181,8 @@ export default function ContactPage() {
                   </h4>
                   <div className="space-y-3 text-sm text-text-light">
                     <p>
-                      <strong className="text-secondary">By Car:</strong> Located on
-                      Anna Salai (Mount Road), easily accessible from all parts
+                      <strong className="text-secondary">By Car:</strong> Located in
+                      Sampath Nagar, Nanmangalam, easily accessible from all parts
                       of Chennai. Free parking available.
                     </p>
                     <p>

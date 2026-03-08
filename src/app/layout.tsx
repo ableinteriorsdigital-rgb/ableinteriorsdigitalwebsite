@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import ChatBot from "@/components/ChatBot";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import EnquiryPopup from "@/components/EnquiryPopup";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,11 +20,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Able Windows | Premium uPVC & Aluminium Windows, Doors & Interiors",
-    template: "%s | Able Windows",
+    default: "Able Interiors & Windows | Premium uPVC & Aluminium Windows, Doors & Interiors",
+    template: "%s | Able Interiors & Windows",
   },
   description:
-    "Able Windows offers premium uPVC and aluminium windows, doors, and bespoke interior solutions in Chennai & Tamil Nadu. 20-year warranty. Get a free quote today!",
+    "Able Interiors & Windows offers premium uPVC and aluminium windows, doors, and bespoke interior solutions in Chennai & Tamil Nadu. 20-year warranty. Get a free quote today!",
   keywords: [
     "uPVC windows",
     "aluminium windows",
@@ -34,23 +35,23 @@ export const metadata: Metadata = {
     "wardrobes",
     "windows Chennai",
     "doors Tamil Nadu",
-    "Able Windows",
+    "Able Interiors & Windows",
     "German uPVC",
     "window installation",
     "interior solutions",
   ],
-  authors: [{ name: "Able Windows" }],
+  authors: [{ name: "Able Interiors & Windows" }],
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "Able Windows",
-    title: "Able Windows | Premium Windows, Doors & Interiors",
+    siteName: "Able Interiors & Windows",
+    title: "Able Interiors & Windows | Premium Windows, Doors & Interiors",
     description:
       "Transform your home with premium uPVC & aluminium windows, doors, and complete interior solutions. 20-year warranty. Free consultation.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Able Windows | Premium Windows, Doors & Interiors",
+    title: "Able Interiors & Windows | Premium Windows, Doors & Interiors",
     description:
       "Transform your home with premium uPVC & aluminium windows, doors, and complete interior solutions.",
   },
@@ -76,6 +77,7 @@ export default function RootLayout({
         <Footer />
         <ChatBot />
         <WhatsAppButton />
+        <EnquiryPopup />
       </body>
     </html>
   );

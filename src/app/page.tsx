@@ -25,6 +25,7 @@ import {
 import SectionHeading from "@/components/SectionHeading";
 import StatCounter from "@/components/StatCounter";
 import QuoteForm from "@/components/QuoteForm";
+import VideoTestimonials from "@/components/VideoTestimonials";
 import { images } from "@/lib/images";
 import {
   RevealOnScroll,
@@ -121,7 +122,7 @@ const whyChooseUs = [
 const testimonials = [
   {
     quote:
-      "Able Windows transformed our home with stunning uPVC windows. The soundproofing is incredible — we barely hear the traffic now. The team was professional and completed the installation on time.",
+      "Able Interiors & Windows transformed our home with stunning uPVC windows. The soundproofing is incredible — we barely hear the traffic now. The team was professional and completed the installation on time.",
     name: "Rajesh Kumar",
     location: "Chennai",
     avatar: images.avatar1,
@@ -129,7 +130,7 @@ const testimonials = [
   },
   {
     quote:
-      "We chose Able Windows for our villa project and couldn't be happier. The aluminium sliding doors they installed are elegant and smooth. Their attention to detail sets them apart from competitors.",
+      "We chose Able Interiors & Windows for our villa project and couldn't be happier. The aluminium sliding doors they installed are elegant and smooth. Their attention to detail sets them apart from competitors.",
     name: "Priya Venkatesh",
     location: "Coimbatore",
     avatar: images.avatar2,
@@ -137,7 +138,7 @@ const testimonials = [
   },
   {
     quote:
-      "From modular kitchen to wardrobes, Able Windows delivered everything with precision. The quality of materials and craftsmanship is outstanding. Highly recommend their interior solutions!",
+      "From modular kitchen to wardrobes, Able Interiors & Windows delivered everything with precision. The quality of materials and craftsmanship is outstanding. Highly recommend their interior solutions!",
     name: "Suresh Babu",
     location: "Madurai",
     avatar: images.avatar3,
@@ -232,10 +233,10 @@ export default function HomePage() {
                 <HiArrowRight className="text-lg group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
-                href="tel:+919876543210"
+                href="tel:+919789053195"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
               >
-                Call +91 98765 43210
+                Call +91 97890 53195
               </a>
             </motion.div>
             {/* Trust badges */}
@@ -361,7 +362,7 @@ export default function HomePage() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeading
-            subtitle="Why Able Windows"
+            subtitle="Why Able Interiors & Windows"
             title="Built on Trust, Delivered with Excellence"
             description="We combine German engineering with Indian craftsmanship to deliver windows, doors, and interiors that last a lifetime."
           />
@@ -439,7 +440,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <RevealOnScroll direction="left">
               <span className="inline-block px-4 py-1.5 bg-white/10 text-blue-200 text-sm font-semibold rounded-full mb-4">
-                About Able Windows
+                About Able Interiors & Windows
               </span>
               <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
                 Transforming Spaces with{" "}
@@ -448,7 +449,7 @@ export default function HomePage() {
                 </span>
               </h2>
               <p className="text-slate-300 leading-relaxed mb-6">
-                Able Windows brings together German-engineered uPVC windows,
+                Able Interiors & Windows brings together German-engineered uPVC windows,
                 precision aluminium windows and doors, and bespoke interiors.
                 Our solutions combine durability, energy efficiency, and elegant
                 design to elevate every home.
@@ -525,7 +526,7 @@ export default function HomePage() {
           <SectionHeading
             subtitle="Testimonials"
             title="What Our Clients Say"
-            description="Our top priority is customer satisfaction. Here's what our happy clients have to say about their experience with Able Windows."
+            description="Our top priority is customer satisfaction. Here's what our happy clients have to say about their experience with Able Interiors & Windows."
           />
           <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((t) => (
@@ -557,6 +558,9 @@ export default function HomePage() {
           </StaggerChildren>
         </div>
       </section>
+
+      {/* ───── Video Feedback ───── */}
+      <VideoTestimonials />
 
       {/* ───── CTA Section ───── */}
       <section className="section-padding bg-gradient-to-r from-primary to-primary-light relative overflow-hidden">

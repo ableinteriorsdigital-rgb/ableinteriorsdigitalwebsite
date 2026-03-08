@@ -220,7 +220,7 @@ export default function DoorsPage() {
           <SectionHeading
             subtitle="Key Benefits"
             title="Why Our Doors Stand Out"
-            description="Every door from Able Windows is built with precision, tested for performance, and designed for beauty."
+            description="Every door from Able Interiors & Windows is built with precision, tested for performance, and designed for beauty."
           />
           <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {doorBenefits.map((b) => (

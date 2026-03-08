@@ -38,16 +38,16 @@ function getBotResponse(message: string): string {
     return "We offer industry-leading warranties:\n\n• 20 years on uPVC profiles\n• 10 years on hardware\n• Products are CIPET certified\n• 8000-hour UV resistance tested\n\nYour investment is fully protected!";
   }
   if (lower.includes("site visit") || lower.includes("visit") || lower.includes("book")) {
-    return "We'd be happy to arrange a free site visit! Please share:\n\n• Your name\n• Phone number\n• Address / Area\n• Preferred date & time\n\nOr call us directly at +91 98765 43210 for instant scheduling.";
+    return "We'd be happy to arrange a free site visit! Please share:\n\n• Your name\n• Phone number\n• Address / Area\n• Preferred date & time\n\nOr call us directly at +91 97890 53195 for instant scheduling.";
   }
   if (lower.includes("location") || lower.includes("area") || lower.includes("serve") || lower.includes("chennai")) {
     return "We serve all of Tamil Nadu! Our primary service areas include Chennai, Coimbatore, Madurai, Trichy, Salem, and 50+ other locations. We also handle projects across South India for large orders.";
   }
   if (lower.includes("hi") || lower.includes("hello") || lower.includes("hey")) {
-    return "Hello! 👋 Welcome to Able Windows. How can I help you today?\n\nYou can ask me about:\n• Windows & Doors\n• Interior Solutions\n• Pricing & Quotes\n• Warranty Information\n• Booking a Site Visit";
+    return "Hello! 👋 Welcome to Able Interiors & Windows. How can I help you today?\n\nYou can ask me about:\n• Windows & Doors\n• Interior Solutions\n• Pricing & Quotes\n• Warranty Information\n• Booking a Site Visit";
   }
 
-  return "Thank you for your message! For detailed assistance, you can:\n\n• Call us: +91 98765 43210\n• WhatsApp us for quick replies\n• Fill our quote form at /get-quote\n\nOr ask me about our windows, doors, interiors, warranty, or booking a site visit!";
+  return "Thank you for your message! For detailed assistance, you can:\n\n• Call us: +91 97890 53195\n• WhatsApp us for quick replies\n• Fill our quote form at /get-quote\n\nOr ask me about our windows, doors, interiors, warranty, or booking a site visit!";
 }
 
 export default function ChatBot() {
@@ -55,7 +55,7 @@ export default function ChatBot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 0,
-      text: "Hi there! 👋 Welcome to Able Windows. I'm here to help you with windows, doors, and interior solutions. How can I assist you today?",
+      text: "Hi there! 👋 Welcome to Able Interiors & Windows. I'm here to help you with windows, doors, and interior solutions. How can I assist you today?",
       sender: "bot",
     },
   ]);
@@ -138,7 +138,7 @@ export default function ChatBot() {
                   <HiChat className="text-white text-lg" />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold text-sm">Able Windows</h3>
+                  <h3 className="text-white font-bold text-sm">Able Interiors & Windows</h3>
                   <div className="flex items-center gap-1.5">
                     <span className="w-2 h-2 bg-green-400 rounded-full" />
                     <span className="text-blue-100 text-xs">Online now</span>

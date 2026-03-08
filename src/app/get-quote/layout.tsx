@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Get Free Quote",
   description:
-    "Request a free quote for uPVC windows, aluminium doors, modular kitchens, and interior solutions from Able Windows. Quick response within 24 hours.",
+    "Request a free quote for uPVC windows, aluminium doors, modular kitchens, and interior solutions from Able Interiors & Windows. Quick response within 24 hours.",
   keywords: ["free quote windows", "quote doors", "quote interiors", "uPVC quote Chennai"],
 };
 

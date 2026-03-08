@@ -26,7 +26,7 @@ import {
 } from "@/components/animations";
 
 const milestones = [
-  { year: "2013", event: "Founded Able Windows with a vision for premium window solutions" },
+  { year: "2013", event: "Founded Able Interiors & Windows with a vision for premium window solutions" },,
   { year: "2015", event: "Expanded to aluminium window and door systems" },
   { year: "2017", event: "Reached 100+ residential project completions" },
   { year: "2019", event: "Launched complete interior solutions division" },
@@ -155,7 +155,7 @@ export default function AboutPage() {
                 centered={false}
               />
               <p className="text-text-light leading-relaxed mb-6">
-                Able Windows has meticulously built a reputation for trust and
+                Able Interiors & Windows has meticulously built a reputation for trust and
                 quality by consistently delivering high value, lasting
                 functionality, and reliable benefits. Since our inception, we
                 have been dedicated to bringing world-class window and door
@@ -223,7 +223,9 @@ export default function AboutPage() {
           <div className="relative">
             <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary/20 -translate-x-1/2" />
             <div className="space-y-8">
-              {milestones.map((m, i) => (
+              {milestones.map((m, i) => {
+                if (!m) return null;
+                return (
                 <motion.div
                   key={m.year}
                   initial={{ opacity: 0, y: 20 }}
@@ -258,7 +260,8 @@ export default function AboutPage() {
                     </span>
                   </div>
                 </motion.div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

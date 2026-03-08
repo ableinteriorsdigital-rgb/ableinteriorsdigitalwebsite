@@ -103,14 +103,14 @@ export default function GetQuotePage() {
                 </p>
                 <div className="space-y-3">
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919789053195"
                     className="flex items-center gap-3 px-5 py-3 bg-white/20 rounded-xl hover:bg-white/30 transition-colors text-sm"
                   >
                     <FaPhoneAlt />
-                    <span>+91 98765 43210</span>
+                    <span>+91 97890 53195</span>
                   </a>
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/919789053195"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 px-5 py-3 bg-white/20 rounded-xl hover:bg-white/30 transition-colors text-sm"

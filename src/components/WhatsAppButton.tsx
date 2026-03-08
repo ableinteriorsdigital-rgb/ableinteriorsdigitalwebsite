@@ -8,12 +8,12 @@ import { HiArrowRight } from "react-icons/hi";
 export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const phoneNumber = "919876543210";
+  const phoneNumber = "919789053195";
   const prefilledMessages = [
     { label: "Get a Quote", message: "Hi, I'd like to get a quote for windows/doors." },
     { label: "Book Site Visit", message: "Hi, I'd like to book a free site visit." },
     { label: "Interior Enquiry", message: "Hi, I'm interested in your interior solutions." },
-    { label: "General Enquiry", message: "Hi, I have a question about Able Windows." },
+    { label: "General Enquiry", message: "Hi, I have a question about Able Interiors & Windows." },
   ];
 
   return (
@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
               <div className="flex items-center gap-3">
                 <FaWhatsapp className="text-white text-2xl" />
                 <div>
-                  <h3 className="text-white font-bold text-sm">Able Windows</h3>
+                  <h3 className="text-white font-bold text-sm">Able Interiors & Windows</h3>
                   <p className="text-green-100 text-xs">Typically replies instantly</p>
                 </div>
               </div>
@@ -73,11 +73,11 @@ export default function WhatsAppButton() {
             {/* Call option */}
             <div className="px-3 pb-3">
               <a
-                href="tel:+919876543210"
+                href="tel:+919789053195"
                 className="flex items-center justify-center gap-2 w-full px-4 py-2.5 border border-slate-200 rounded-xl text-sm font-medium text-text hover:bg-slate-50 transition-colors"
               >
                 <FaPhoneAlt className="text-xs text-primary" />
-                Call +91 98765 43210
+                Call +91 97890 53195
               </a>
             </div>
           </motion.div>

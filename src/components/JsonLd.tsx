@@ -2,18 +2,18 @@ export default function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Able Windows",
+    name: "Able Interiors & Windows",
     description:
       "Premium uPVC and aluminium windows, doors, and bespoke interior solutions in Chennai & Tamil Nadu.",
     url: "https://ablewindows.com",
-    telephone: "+919876543210",
-    email: "info@ablewindows.com",
+    telephone: "+919789053195",
+    email: "ablewindows22@gmail.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "123, Anna Salai",
-      addressLocality: "Chennai",
+      streetAddress: "Flat No.: 1/106ab, G1, Plot No.B5, Sampath Nagar",
+      addressLocality: "Nanmangalam, Chennai",
       addressRegion: "Tamil Nadu",
-      postalCode: "600002",
+      postalCode: "600129",
       addressCountry: "IN",
     },
     geo: {
@@ -24,15 +24,9 @@ export default function JsonLd() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        opens: "09:00",
-        closes: "19:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Sunday",
-        opens: "10:00",
-        closes: "16:00",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "09:30",
+        closes: "18:30",
       },
     ],
     priceRange: "$$",

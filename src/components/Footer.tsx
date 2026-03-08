@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 
 const services = [
@@ -45,7 +46,7 @@ export default function Footer() {
               Get Free Quote
             </Link>
             <a
-              href="tel:+919876543210"
+              href="tel:+919789053195"
               className="px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all text-center"
             >
               Call Now
@@ -60,12 +61,12 @@ export default function Footer() {
           {/* Company */}
           <div>
             <div className="flex items-center gap-2 mb-5">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">A</span>
+              <div className="w-10 h-10 rounded-lg overflow-hidden">
+                <Image src="/logo/logo.png" alt="Able Interiors & Windows" width={40} height={40} className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">
-                  Able <span className="text-primary-light">Windows</span>
+                  Able <span className="text-primary-light">Interiors & Windows</span>
                 </h3>
               </div>
             </div>
@@ -128,26 +129,26 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919789053195"
                   className="flex items-start gap-3 text-slate-400 hover:text-primary-light text-sm transition-colors"
                 >
                   <FaPhone className="text-primary-light mt-0.5 shrink-0" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 97890 53195 / 97899 14746</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@ablewindows.com"
+                  href="mailto:ablewindows22@gmail.com"
                   className="flex items-start gap-3 text-slate-400 hover:text-primary-light text-sm transition-colors"
                 >
                   <FaEnvelope className="text-primary-light mt-0.5 shrink-0" />
-                  <span>info@ablewindows.com</span>
+                  <span>ablewindows22@gmail.com</span>
                 </a>
               </li>
               <li>
                 <div className="flex items-start gap-3 text-slate-400 text-sm">
                   <FaMapMarkerAlt className="text-primary-light mt-0.5 shrink-0" />
-                  <span>Chennai, Tamil Nadu, India</span>
+                  <span>Flat No.: 1/106ab, G1, Plot No.B5,<br />Sampath Nagar, Nanmangalam,<br />Chennai - 600129</span>
                 </div>
               </li>
             </ul>
@@ -159,7 +160,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} Able Windows. All rights reserved.
+            © {new Date().getFullYear()} Able Interiors & Windows. All rights reserved. | GST: 33CMRPM6079C1ZR
           </p>
           <div className="flex gap-6 text-sm text-slate-500">
             <Link href="#" className="hover:text-primary-light transition-colors">
